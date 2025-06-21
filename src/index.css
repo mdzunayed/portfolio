@@ -1,0 +1,65 @@
+/* General body styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212; /* Dark theme background */
+  color: #e0e0e0; /* Light gray text for dark theme */
+  font-size: 16px; /* Base font size */
+  line-height: 1.5;
+}
+
+/* Code block styling */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #2d2d2d; /* Dark background for code blocks */
+  color: #dcdcdc; /* Lighter text color */
+  padding: 4px 8px;
+  border-radius: 4px;
+  word-wrap: break-word;
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* Additional styles for smooth transitions */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body, #root {
+  height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  code {
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  code {
+    padding: 2px 5px;
+    font-size: 12px;
+  }
+}

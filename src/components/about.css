@@ -1,0 +1,199 @@
+/* General Styles for About Section */
+.about {
+  padding: 120px 5%;
+  background: linear-gradient(to bottom, #0a0d1a 0%, #111b2e 100%);
+  background-color: #f4f6f9;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Container to center the content */
+.about .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* About Section Title */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #f9fcff;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* About Section Description */
+.about-description {
+  font-size: 1.2rem;
+  color: #596364;
+  line-height: 1.8;
+  margin-top: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.about-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+.cv-buttons {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 22px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  display: inline-block;
+}
+
+.btn-download {
+  background-color: #007acc;
+  color: white;
+  border: none;
+}
+
+.btn-download:hover {
+  background-color: #005f99;
+}
+
+.btn-view {
+  background-color: transparent;
+  color: #007acc;
+  border: 2px solid #007acc;
+}
+
+.btn-view:hover {
+  background-color: #007acc;
+  color: white;
+}
+
+.profile-links {
+  display:-webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.profile-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-column h3 {
+  margin-bottom: 15px;
+  font-size: 1.26rem;
+  color: #efecec;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.profile-column ul {
+  list-style:lower-alpha;
+  padding: 1px;
+  margin: 1px;
+}
+
+.profile-column li {
+  display: flex;
+  align-items: center;
+  margin: 10px 4px;
+  font-size: 1rem;
+}
+
+.profile-column li svg {
+  margin-right: 10px;
+  color: #2ed891;
+  flex-shrink: 1px;
+}
+
+.profile-column a {
+  color: #4387b1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.profile-column a:hover {
+  color: #97cfd2;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-links {
+    flex-direction: column;
+  }
+}
+
+/* Ensuring it’s spaced from the header */
+body {
+  padding-top: 80px; /* If header is fixed, this ensures the content doesn't overlap */
+}
+
+/* Hover Effect for Section Title */
+.section-title:hover {
+  color: #ffcc00;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .about {
+      padding: 100px 5%;
+  }
+
+  .section-title {
+      font-size: 2.4rem;
+      margin-bottom: 25px;
+  }
+
+  .about-description {
+      font-size: 1.1rem;
+      padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+      padding: 80px 5%;
+  }
+
+  .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+  }
+
+  .about-description {
+      font-size: 1rem;
+      padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+      padding: 60px 3%;
+  }
+
+  .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+  }
+
+  .about-description {
+      font-size: 1rem;
+      padding: 0 10px;
+  }
+}
