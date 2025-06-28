@@ -5,6 +5,7 @@
   text-align: center;
   position: relative;
   min-height: 100vh;
+  margin-top: -15%;
 }
 
 /* Container to center the content */
@@ -12,7 +13,6 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
-
 }
 
 /* About Section Title */
@@ -218,12 +218,8 @@ body {
   - Increases sizes for a better experience on large screens.
 */
 @media (min-width: 1024px) {
-  .profile-pic {
-    width: 250px;
-    /* Original desktop size */
-    height: 250px;
-    margin-right: 60px;
-    /* More space for larger screens */
+  .about {
+    margin-top: -1%;
   }
 
   .about .container {

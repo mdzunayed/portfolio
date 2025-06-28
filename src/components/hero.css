@@ -41,7 +41,7 @@
   transform: translateX(-50%);
   /* Proper centering */
   margin: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 /* Hero Container - now holds both image and text box */
@@ -60,7 +60,7 @@
   /* Center content horizontally */
   max-width: 400vw;
   width: 100vw;
-  margin-top: -5%;
+  margin-top: -3%;
 }
 
 /* Inner Container Styling (the text box) */

@@ -1,9 +1,14 @@
 import React, { useState } from "react";
-import { FaGithub, FaExternalLinkAlt, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
 import "./projects.css";
 // Import your project images
 import dermavisionImg from "./projects_image/dermavision.png";
-import dermavisionImg1 from "./projects_image/dermavision1.png"; 
+import dermavisionImg1 from "./projects_image/dermavision1.png";
 import lungCancerImg from "./projects_image/lung-cancer1.png";
 import lungCancerImg2 from "./projects_image/lung-cancer2.png";
 import lungCancerImg3 from "./projects_image/lung-cancer3.png";
@@ -17,52 +22,75 @@ const Projects = () => {
     {
       title: "DermaVision",
       images: [dermavisionImg, dermavisionImg1],
-      description: "A web application that leverages explainable deep learning to detect skin cancer (melanoma) from dermoscopic images.",
+      description:
+        "A web application that leverages explainable deep learning to detect skin cancer (melanoma) from dermoscopic images.",
       features: [
         "CNN-based skin cancer classification",
         "Explainable AI with Grad-CAM visualizations",
-        "Flask backend with REST API"
+        "Flask backend with REST API",
       ],
-      stack: ["Python", "matplotlib","Seaborn","PyTorch", "React", "Flask", "TensorFlow", "OpenCV","HTML","CSS"],
+      stack: [
+        "Python",
+        "matplotlib",
+        "Seaborn",
+        "PyTorch",
+        "React",
+        "Flask",
+        "TensorFlow",
+        "OpenCV",
+        "HTML",
+        "CSS",
+      ],
       link: "https://github.com/mdzunayed/DermaVision",
-      demo: "#"
+      demo: "#",
     },
     {
       title: "Lung Cancer Classifier",
-      images: [lungCancerImg, lungCancerImg2, lungCancerImg4,lungCancerImg3],
-      description: "Machine learning system for histopathological lung cancer image classification.",
+      images: [lungCancerImg, lungCancerImg2, lungCancerImg4, lungCancerImg3],
+      description:
+        "Machine learning system for histopathological lung cancer image classification.",
       features: [
         "Transfer learning with ResNet50",
         "Data augmentation techniques",
-        "Accuracy of 92% on test set"
+        "Accuracy of 92% on test set",
       ],
-      stack: ["Python","NumPy","Pandas","TensorFlow", "Keras", "matplotlib","Seaborn", "OpenCV"],
+      stack: [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "TensorFlow",
+        "Keras",
+        "matplotlib",
+        "Seaborn",
+        "OpenCV",
+      ],
       link: "https://github.com/mdzunayed/Classifying-Lung-Cancer",
-      demo: "#"
-    }
+      demo: "#",
+    },
     // Add more projects as needed
   ];
 
   // Initialize current image index for each project
   projects.forEach((project, index) => {
     if (!currentImageIndex.hasOwnProperty(index)) {
-      setCurrentImageIndex(prev => ({ ...prev, [index]: 0 }));
+      setCurrentImageIndex((prev) => ({ ...prev, [index]: 0 }));
     }
   });
 
   const nextImage = (projectIndex) => {
-    setCurrentImageIndex(prev => ({
+    setCurrentImageIndex((prev) => ({
       ...prev,
-      [projectIndex]: (prev[projectIndex] + 1) % projects[projectIndex].images.length
+      [projectIndex]:
+        (prev[projectIndex] + 1) % projects[projectIndex].images.length,
     }));
   };
 
   const prevImage = (projectIndex) => {
-    setCurrentImageIndex(prev => ({
+    setCurrentImageIndex((prev) => ({
       ...prev,
-      [projectIndex]: 
-        (prev[projectIndex] - 1 + projects[projectIndex].images.length) % 
-        projects[projectIndex].images.length
+      [projectIndex]:
+        (prev[projectIndex] - 1 + projects[projectIndex].images.length) %
+        projects[projectIndex].images.length,
     }));
   };
 
@@ -74,26 +102,26 @@ const Projects = () => {
           <div className="card" key={index}>
             <div className="project-header">
               <div className="image-carousel">
-                <img 
-                  src={project.images[currentImageIndex[index] || 0]} 
-                  alt={`${project.title} ${currentImageIndex[index] + 1}`} 
+                <img
+                  src={project.images[currentImageIndex[index] || 0]}
+                  alt={`${project.title} ${currentImageIndex[index] + 1}`}
                   className="project-image"
                 />
                 {project.images.length > 1 && (
                   <>
-                    <button 
-                      className="carousel-btn prev" 
+                    <button
+                      className="carousel-btn prev"
                       onClick={() => prevImage(index)}
                     >
                       <FaChevronLeft />
                     </button>
-                    <button 
-                      className="carousel-btn next" 
+                    <button
+                      className="carousel-btn next"
                       onClick={() => nextImage(index)}
                     >
                       <FaChevronRight />
                     </button>
-                    <div className="image-counter">
+                    <div className="image-counter" style={{ color: "black" }}>
                       {currentImageIndex[index] + 1}/{project.images.length}
                     </div>
                   </>
@@ -102,7 +130,7 @@ const Projects = () => {
               <h3>{project.title}</h3>
             </div>
             <p>{project.description}</p>
-            
+
             <div className="project-features">
               <h4>Key Features:</h4>
               <ul>
@@ -111,19 +139,25 @@ const Projects = () => {
                 ))}
               </ul>
             </div>
-            
+
             <div className="project-stack">
               <h4>Tech Stack:</h4>
               <div className="stack-tags">
                 {project.stack.map((tech, i) => (
-                  <span key={i} className="stack-tag">{tech}</span>
+                  <span key={i} className="stack-tag">
+                    {tech}
+                  </span>
                 ))}
               </div>
             </div>
-            
+
             <div className="project-links">
               {project.demo && (
-                <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaExternalLinkAlt /> Live Demo
                 </a>
               )}
