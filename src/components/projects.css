@@ -1,27 +1,45 @@
-/* Projects Section - Maintained existing colors */
+/*
+  ========================================
+  PROJECTS SECTION (Updated for Responsiveness)
+  ========================================
+  - Mobile-first design approach
+  - Flexible grid layout that adapts to screen size
+  - Consistent spacing and typography scaling
+*/
+
+/* General Styles for Projects Section (Mobile First) */
 .projects {
-  padding: 15vi 1px;
+  padding: 15vh 5vw;
+  /* Using viewport units for responsive padding */
   background: linear-gradient(to bottom, #0a0d1a 0%, #111b2e 100%);
   text-align: center;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .projects h2 {
   color: #ffffff;
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  background: linear-gradient(to bottom, #eff1f3 0%, #dbe0e6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Projects Grid - Maintained existing layout */
+/* Projects Grid - Mobile First */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  max-width: 80%;
-  margin: auto;
+  grid-template-columns: 1fr;
+  /* Single column on mobile */
+  height: 100%;
+  gap: 25px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 
-/* Project Card - Maintained existing colors */
+/* Project Card - Mobile First */
 .card {
   background-color: rgb(209, 215, 214);
   border-radius: 10px;
@@ -29,7 +47,6 @@
   padding: 20px;
   text-align: left;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-  position: center;
 }
 
 .card:hover {
@@ -37,21 +54,22 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Project Title - Maintained existing colors */
+/* Project Title */
 .card h3 {
   color: #2c3e50;
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
-/* Project Description - Maintained existing colors */
+/* Project Description */
 .card p {
   font-size: 1rem;
   color: #535959;
   margin-bottom: 15px;
+  line-height: 1.5;
 }
 
-/* New Features Section */
+/* Project Features Section */
 .project-features h4 {
   color: #2c3e50;
   font-size: 1.1rem;
@@ -67,6 +85,7 @@
   color: #535959;
   font-size: 0.9rem;
   margin-bottom: 5px;
+  line-height: 1.4;
 }
 
 /* Tech Stack Section */
@@ -91,9 +110,11 @@
   font-size: 0.8rem;
 }
 
-/* Project Links - Maintained existing button style */
+/* Project Links */
 .project-links {
   display: flex;
+  flex-wrap: wrap;
+  /* Allow wrapping on small screens */
   gap: 10px;
   margin-top: 15px;
 }
@@ -101,6 +122,7 @@
 .project-links a {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
   background-color: #3498db;
   color: white;
@@ -110,6 +132,45 @@
   border-radius: 5px;
   transition: background 0.3s, transform 0.2s;
   font-size: 0.9rem;
+  flex: 1;
+  /* Make buttons take equal space */
+  min-width: 120px;
+  /* Minimum width for buttons */
+}
+
+/* Project Image Styles */
+.project-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  overflow: hidden;
+  /* Ensures image corners stay rounded */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .project-image {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-image {
+    height: 220px;
+  }
 }
 
 .project-links a:hover {
@@ -117,15 +178,81 @@
   transform: scale(1.05);
 }
 
-/* Responsive Design - Maintained existing breakpoints */
+/* TABLET RESPONSIVENESS (768px and up) */
 @media (min-width: 768px) {
+  .projects {
+    padding: 15vh 8vw;
+  }
+
+  .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
   .project-grid {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 0;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1.05rem;
   }
 }
 
+/* DESKTOP RESPONSIVENESS (1024px and up) */
 @media (min-width: 1024px) {
+  .projects {
+    padding: 15vh 10vw;
+    width: 100%;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects h2 {
+    font-size: 3rem;
+  }
+
   .project-grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    height: auto;
+  }
+
+  .card {
+    padding: 25px;
+    height: 99%;
+  }
+
+  .card h3 {
+    font-size: 1.6rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  .project-links {
+    flex-wrap: nowrap;
+    /* Keep buttons in one row on desktop */
+  }
+
+  .project-links a {
+    flex: none;
+    /* Reset flex for desktop */
+    width: auto;
+  }
+}
+
+/* LARGE DESKTOP (1440px and up) */
+@media (min-width: 1440px) {
+  .project-grid {
+    max-width: 1400px;
   }
 }

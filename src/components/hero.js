@@ -19,9 +19,10 @@ const Hero = () => {
           </h3>
           <h4>East West University</h4>
           <p>
-            Passionate about Machine Learning & Artificial Intelligence, I
-            participate in Kaggle competitions and work with real-world
-            datasets. My projects include explainable AI for mental disorder
+            Aspiring Machine Learning Engineer with a solid foundation in competitive programming and experience building and deploying ML models using Kaggle competitions,
+            Hugging Face Transformers, and deep learning frameworks like TensorFlow and PyTorch.
+            Passionate about applying AI to solve real-world problems and eager to contribute to innovative projects in a dynamic environment that values continuous learning and growth.
+            My projects include explainable AI for mental disorder
             detection and lung cancer classification using histopathological
             images and skin cancer.
           </p>
