@@ -148,52 +148,88 @@ body {
   cursor: pointer;
   transition: color 0.3s ease;
 }
-
-/* Mobile Responsiveness */
-@media (max-width: 1024px) {
+/*
+  ========================================
+  TABLET RESPONSIVENESS
+  ========================================
+  - Applies to screens 768px and wider.
+  - Changes layout to side-by-side.
+*/
+@media (min-width: 768px) {
   .about {
-      padding: 100px 5%;
+    flex-direction: row; /* Side-by-side layout */
+    justify-content: space-evenly;
+    padding: 10vh 5vw;
   }
 
-  .section-title {
-      font-size: 2.4rem;
-      margin-bottom: 25px;
+  .profile-pic {
+    width: 220px; /* Larger image for tablets */
+    height: 220px;
+    margin-bottom: 0; /* Remove bottom margin */
+    margin-right: 40px; /* Add space to the right of the image */
   }
 
-  .about-description {
-      font-size: 1.1rem;
-      padding: 0 20px;
+  .about .container {
+    max-width: 600px;
+  }
+
+  .about .inner-container {
+    padding: 5% 8%;
+    text-align: left; /* Align text to the left for a cleaner look */
+  }
+
+  /* Adjust heading sizes for tablets */
+  .about .inner-container h2 {
+    font-size: 2.8rem;
+  }
+
+  .about .inner-container h3 {
+    font-size: 1.7rem;
+  }
+
+  .about .inner-container h4 {
+    font-size: 1.3rem;
+  }
+
+  .about .inner-container p {
+    font-size: 1.05rem;
+    margin: 0; /* Reset mobile margin */
+    margin-bottom: 15px; /* Keep paragraph spacing */
   }
 }
 
-@media (max-width: 768px) {
-  .about {
-      padding: 80px 5%;
+/*
+  ========================================
+  DESKTOP RESPONSIVENESS
+  ========================================
+  - Applies to screens 1024px and wider.
+  - Increases sizes for a better experience on large screens.
+*/
+@media (min-width: 1024px) {
+  .profile-pic {
+    width: 250px; /* Original desktop size */
+    height: 250px;
+    margin-right: 60px; /* More space for larger screens */
   }
 
-  .section-title {
-      font-size: 2rem;
-      margin-bottom: 20px;
+  .about .container {
+    max-width: 700px; /* Wider content area */
   }
 
-  .about-description {
-      font-size: 1rem;
-      padding: 0 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about {
-      padding: 60px 3%;
+  /* Restore original font sizes for desktop */
+  .about .inner-container h2 {
+    font-size: 3rem;
   }
 
-  .section-title {
-      font-size: 1.8rem;
-      margin-bottom: 15px;
+  .about .inner-container h3 {
+    font-size: 1.8rem;
   }
 
-  .about-description {
-      font-size: 1rem;
-      padding: 0 10px;
+  .about .inner-container h4 {
+    font-size: 1.4rem;
+  }
+
+  .about .inner-container p {
+    font-size: 1.1rem;
   }
 }

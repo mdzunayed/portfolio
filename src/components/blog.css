@@ -78,58 +78,88 @@ h2 {
     color: #2980b9;
     text-decoration: underline;
 }
+/*
+  ========================================
+  TABLET RESPONSIVENESS
+  ========================================
+  - Applies to screens 768px and wider.
+  - Changes layout to side-by-side.
+*/
+@media (min-width: 768px) {
+  .blog-section {
+    flex-direction: row; /* Side-by-side layout */
+    justify-content: space-evenly;
+    padding: 10vh 5vw;
+  }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .blog-section {
-        padding: 8vh 4%;
-    }
+  .profile-pic {
+    width: 220px; /* Larger image for tablets */
+    height: 220px;
+    margin-bottom: 0; /* Remove bottom margin */
+    margin-right: 40px; /* Add space to the right of the image */
+  }
 
-    .blog-section .container {
-        padding: 3vh 4vh;
-    }
+  .blog-section .container {
+    max-width: 600px;
+  }
 
-    h2 {
-        font-size: 1.8rem;
-    }
+  .blog-section .inner-container {
+    padding: 5% 8%;
+    text-align: left; /* Align text to the left for a cleaner look */
+  }
 
-    .blog-post {
-        padding: 20px;
-    }
+  /* Adjust heading sizes for tablets */
+  .blog-section .inner-container h2 {
+    font-size: 2.8rem;
+  }
+
+  .blog-section .inner-container h3 {
+    font-size: 1.7rem;
+  }
+
+  .blog-section .inner-container h4 {
+    font-size: 1.3rem;
+  }
+
+  .blog-sections .inner-container p {
+    font-size: 1.05rem;
+    margin: 0; /* Reset mobile margin */
+    margin-bottom: 15px; /* Keep paragraph spacing */
+  }
 }
 
-@media (max-width: 768px) {
-    .blog-section {
-        padding: 6vh 3%;
-    }
+/*
+  ========================================
+  DESKTOP RESPONSIVENESS
+  ========================================
+  - Applies to screens 1024px and wider.
+  - Increases sizes for a better experience on large screens.
+*/
+@media (min-width: 1024px) {
+  .profile-pic {
+    width: 250px; /* Original desktop size */
+    height: 250px;
+    margin-right: 60px; /* More space for larger screens */
+  }
 
-    .blog-section .container {
-        padding: 2vh 3vh;
-    }
+  .blog-section .container {
+    max-width: 700px; /* Wider content area */
+  }
 
-    h2 {
-        font-size: 1.6rem;
-    }
+  /* Restore original font sizes for desktop */
+  .blog-section .inner-container h2 {
+    font-size: 3rem;
+  }
 
-    .blog-post {
-        padding: 18px;
-    }
-}
+  .blog-section .inner-container h3 {
+    font-size: 1.8rem;
+  }
 
-@media (max-width: 480px) {
-    .blog-section {
-        padding: 5vh 2%;
-    }
+  .blog-section .inner-container h4 {
+    font-size: 1.4rem;
+  }
 
-    .blog-section .container {
-        padding: 1.5vh 2vh;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .blog-post {
-        padding: 15px;
-    }
+  .blog-section .inner-container p {
+    font-size: 1.1rem;
+  }
 }

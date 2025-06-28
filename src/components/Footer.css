@@ -67,20 +67,88 @@ body {
   transform: rotate(10deg);
 }
 
-/* Responsive Footer */
-@media (max-width: 768px) {
-  .footer {
-      padding: 15px 0;
-      font-size: 1rem;
+/*
+  ========================================
+  TABLET RESPONSIVENESS
+  ========================================
+  - Applies to screens 768px and wider.
+  - Changes layout to side-by-side.
+*/
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row; /* Side-by-side layout */
+    justify-content: space-evenly;
+    padding: 10vh 5vw;
   }
 
-  .social-links {
-      gap: 8px;
+  .profile-pic {
+    width: 220px; /* Larger image for tablets */
+    height: 220px;
+    margin-bottom: 0; /* Remove bottom margin */
+    margin-right: 40px; /* Add space to the right of the image */
   }
 
-  .social-links a {
-      width: 35px;
-      height: 35px;
-      font-size: 1.1rem;
+  .hero .container {
+    max-width: 600px;
+  }
+
+  .hero .inner-container {
+    padding: 5% 8%;
+    text-align: left; /* Align text to the left for a cleaner look */
+  }
+
+  /* Adjust heading sizes for tablets */
+  .hero .inner-container h2 {
+    font-size: 2.8rem;
+  }
+
+  .hero .inner-container h3 {
+    font-size: 1.7rem;
+  }
+
+  .hero .inner-container h4 {
+    font-size: 1.3rem;
+  }
+
+  .hero .inner-container p {
+    font-size: 1.05rem;
+    margin: 0; /* Reset mobile margin */
+    margin-bottom: 15px; /* Keep paragraph spacing */
+  }
+}
+
+/*
+  ========================================
+  DESKTOP RESPONSIVENESS
+  ========================================
+  - Applies to screens 1024px and wider.
+  - Increases sizes for a better experience on large screens.
+*/
+@media (min-width: 1024px) {
+  .profile-pic {
+    width: 250px; /* Original desktop size */
+    height: 250px;
+    margin-right: 60px; /* More space for larger screens */
+  }
+
+  .hero .container {
+    max-width: 700px; /* Wider content area */
+  }
+
+  /* Restore original font sizes for desktop */
+  .hero .inner-container h2 {
+    font-size: 3rem;
+  }
+
+  .hero .inner-container h3 {
+    font-size: 1.8rem;
+  }
+
+  .hero .inner-container h4 {
+    font-size: 1.4rem;
+  }
+
+  .hero .inner-container p {
+    font-size: 1.1rem;
   }
 }

@@ -30,13 +30,6 @@ const About = () => {
           engineer.
         </p>
 
-      {/* Buttons for CV */}
-        <div className="cv-buttons">
-          <a href="/files/CV.pdf" download className="btn btn-download">
-            Download CV
-          </a>
-        </div>
-
         <div className="profile-links">
           {/* Competitive Programming */}
           <div className="profile-column">
@@ -155,13 +148,13 @@ const About = () => {
 
           {/* Social & Contact */}
           <div className="profile-column">
-            <h3>Social & Contact</h3>
+            <h3>Social</h3>
             <ul>
               
               <li>
                 <FaLinkedin />
                 <a
-                  href="https://linkedin.com/in/YOUR_USERNAME"
+                  href="https://www.linkedin.com/in/mdzunayed002/"
                   target="_blank"
                   rel="noreferrer"
                 >
