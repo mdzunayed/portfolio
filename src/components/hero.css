@@ -14,7 +14,7 @@
   /* Stacks the single child (.container) vertically on mobile */
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #0a0d1a 0%, #111b2e 100%);
+  background: linear-gradient(to bottom, #0645ba00 10%, #1f2c64 100%);
   color: #f4f4f9;
   min-height: 79%;
   padding: 15% 5%;
@@ -60,12 +60,13 @@
   /* Center content horizontally */
   max-width: 400vw;
   width: 100vw;
+  margin-top: -5%;
 }
 
 /* Inner Container Styling (the text box) */
 .hero .inner-container {
   background-color: #2c4b68;
-  padding: 8% 7%;
+  padding: 1% 2%;
   /* Generous padding for mobile */
   border-radius: 12px;
   box-shadow: 0px 4px 15px rgba(99, 92, 92, 0.2);

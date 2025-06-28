@@ -1,6 +1,6 @@
 /* resume.css */
 .resume-wrapper {
-  background-color: white;
+  background: linear-gradient(to bottom, #0645ba00 10%, #1f2c64 100%);
   padding: 2rem;
   max-width: 100%;
 }
@@ -36,7 +36,7 @@
 
 .action-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .resume-container {
@@ -47,7 +47,7 @@
   line-height: 1.6;
   background-color: white;
   padding: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .resume-header {
@@ -142,7 +142,8 @@
   margin: 0.5rem 0 1rem 0;
 }
 
-.skills-table, .interests-table {
+.skills-table,
+.interests-table {
   width: 100%;
 }
 
@@ -199,29 +200,29 @@ sup {
   .resume-wrapper {
     padding: 1rem;
   }
-  
+
   .resume-actions {
     justify-content: center;
   }
-  
+
   .contact-info {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
   }
-  
+
   .subsection-header {
     flex-direction: column;
   }
-  
+
   .duration {
     margin-top: 0.3rem;
   }
-  
+
   .table-row {
     flex-direction: column;
   }
-  
+
   .table-cell:first-child {
     margin-bottom: 0.2rem;
   }

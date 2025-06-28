@@ -1,77 +1,106 @@
 /* General Styles for Contact Section */
 .contact {
-    padding: 80px 20px; /* Standardized vertical and horizontal padding */
-    background: linear-gradient(to bottom, #0a0d1a 0%, #111b2e 100%);
+    padding: 80px 20px;
+    /* Standardized vertical and horizontal padding */
+    background: linear-gradient(to bottom, #0645ba00 10%, #1f2c64 100%);
     /* background-color: #e6eaee; - Removed, gradient handles background */
     text-align: center;
     min-width: auto;
-    min-height: auto; /* Allow height to adjust to content */
-    width: 100%; /* Ensure it spans full width */
+    min-height: auto;
+    /* Allow height to adjust to content */
+    width: 100%;
+    /* Ensure it spans full width */
     height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -3.5%;
 }
 
 /* Contact Heading */
 .contact h2 {
-    font-size: 3rem; /* Slightly larger heading for impact */
+    font-size: 3rem;
+    /* Slightly larger heading for impact */
     color: #eaebec;
-    margin-bottom: 20px; /* More space below heading */
-    font-weight: 700; /* Bolder font weight */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    margin-bottom: 20px;
+    /* More space below heading */
+    font-weight: 700;
+    /* Bolder font weight */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle text shadow */
 }
 
 /* Contact Paragraph */
 .contact p {
-    font-size: 1.15rem; /* Adjusted font size for better readability */
+    font-size: 1.15rem;
+    /* Adjusted font size for better readability */
     color: #dbdbdb;
-    margin-bottom: 30px; /* More space below paragraph */
-    max-width: 700px; /* Increased max-width for longer descriptions */
-    line-height: 1.6; /* Improved line height for readability */
+    margin-bottom: 30px;
+    /* More space below paragraph */
+    max-width: 700px;
+    /* Increased max-width for longer descriptions */
+    line-height: 1.6;
+    /* Improved line height for readability */
 }
 
 /* Contact Links (if used outside form) */
 .contact a {
-    color: #00aaff; /* Brighter blue for links */
+    color: #00aaff;
+    /* Brighter blue for links */
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
 .contact a:hover {
-    color: #007bff; /* Darker blue on hover */
-    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow on hover */
+    color: #007bff;
+    /* Darker blue on hover */
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Subtle glow on hover */
 }
 
 /* Contact Form */
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Slightly increased gap between form elements */
+    gap: 20px;
+    /* Slightly increased gap between form elements */
     width: 100%;
-    max-width: 650px; /* Increased max-width for the form */
-    background-color: #1f2a40; /* Darker background for better contrast */
-    padding: 40px; /* Increased padding inside form */
-    border-radius: 10px; /* Slightly more rounded corners */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Stronger, softer shadow */
+    max-width: 650px;
+    /* Increased max-width for the form */
+    background-color: #1f2a40;
+    /* Darker background for better contrast */
+    padding: 40px;
+    /* Increased padding inside form */
+    border-radius: 10px;
+    /* Slightly more rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    /* Stronger, softer shadow */
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle border */
 }
 
 form:hover {
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+    /* More pronounced shadow on hover */
 }
 
 /* Input Fields */
-input, textarea {
-    padding: 15px; /* Increased padding */
-    border: 1px solid #444; /* Darker border for inputs */
-    border-radius: 6px; /* Slightly less rounded for inputs */
+input,
+textarea {
+    padding: 15px;
+    /* Increased padding */
+    border: 1px solid #444;
+    /* Darker border for inputs */
+    border-radius: 6px;
+    /* Slightly less rounded for inputs */
     font-size: 1rem;
-    color: #e0e0e0; /* Light text color for input */
-    background-color: #2b3850; /* Darker background for input fields */
+    color: #e0e0e0;
+    /* Light text color for input */
+    background-color: #2b3850;
+    /* Darker background for input fields */
     width: 100%;
     box-sizing: border-box;
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -80,42 +109,57 @@ input, textarea {
 /* Placeholder styling */
 input::placeholder,
 textarea::placeholder {
-    color: #a0a0a0; /* Lighter placeholder text */
+    color: #a0a0a0;
+    /* Lighter placeholder text */
     opacity: 0.8;
 }
 
 
-input:focus, textarea:focus {
-    border-color: #00aaff; /* Brighter blue focus border */
+input:focus,
+textarea:focus {
+    border-color: #00aaff;
+    /* Brighter blue focus border */
     outline: none;
-    box-shadow: 0 0 10px rgba(0, 170, 255, 0.3); /* More visible focus glow */
-    background-color: #354560; /* Slightly lighter background on focus */
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
+    /* More visible focus glow */
+    background-color: #354560;
+    /* Slightly lighter background on focus */
 }
 
 /* Textarea Styling */
 textarea {
     resize: vertical;
-    min-height: 120px; /* Increased min-height for textarea */
+    min-height: 120px;
+    /* Increased min-height for textarea */
 }
 
 /* Submit Button */
 button {
-    background-color: #00aaff; /* Matches link color for consistency */
+    background-color: #00aaff;
+    /* Matches link color for consistency */
     color: white;
-    padding: 15px 25px; /* More generous padding */
-    font-size: 1.1rem; /* Slightly larger text */
+    padding: 15px 25px;
+    /* More generous padding */
+    font-size: 1.1rem;
+    /* Slightly larger text */
     border: none;
-    border-radius: 6px; /* Matches input border-radius */
+    border-radius: 6px;
+    /* Matches input border-radius */
     cursor: pointer;
-    font-weight: 700; /* Bolder text */
+    font-weight: 700;
+    /* Bolder text */
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.2); /* Subtle shadow */
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.2);
+    /* Subtle shadow */
 }
 
 button:hover {
-    background-color: #007bff; /* Darker blue on hover */
-    transform: translateY(-2px); /* Slight lift effect */
-    box-shadow: 0 6px 15px rgba(0, 170, 255, 0.3); /* More pronounced shadow */
+    background-color: #007bff;
+    /* Darker blue on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+    box-shadow: 0 6px 15px rgba(0, 170, 255, 0.3);
+    /* More pronounced shadow */
 }
 
 /*
@@ -126,23 +170,30 @@ button:hover {
 
 @media (min-width: 768px) {
     .contact {
-        padding: 100px 40px; /* More padding for larger screens */
+        padding: 100px 40px;
+        /* More padding for larger screens */
     }
 
     .contact h2 {
-        font-size: 3.5rem; /* Larger heading */
+        font-size: 3.5rem;
+        /* Larger heading */
     }
 
     .contact p {
-        font-size: 1.25rem; /* Larger paragraph text */
+        font-size: 1.25rem;
+        /* Larger paragraph text */
     }
 
     form {
-        padding: 50px; /* More padding for the form */
+        padding: 50px;
+        /* More padding for the form */
     }
 
-    input, textarea, button {
-        padding: 16px; /* Slightly larger inputs/buttons */
+    input,
+    textarea,
+    button {
+        padding: 16px;
+        /* Slightly larger inputs/buttons */
         font-size: 1.05rem;
     }
 
@@ -154,18 +205,22 @@ button:hover {
 
 @media (min-width: 1024px) {
     .contact {
-        padding: 2% 20%; /* Even more padding on desktops */
+        padding: 2% 20%;
+        /* Even more padding on desktops */
     }
 
     .contact h2 {
-        font-size: 4rem; /* Largest heading size */
+        font-size: 4rem;
+        /* Largest heading size */
     }
 
     .contact p {
-        font-size: 1.3rem; /* Largest paragraph text */
+        font-size: 1.3rem;
+        /* Largest paragraph text */
     }
 
     form {
-        max-width: 750px; /* Wider form on larger desktops */
+        max-width: 750px;
+        /* Wider form on larger desktops */
     }
 }

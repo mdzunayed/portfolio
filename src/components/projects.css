@@ -1,141 +1,142 @@
 /*
   ========================================
-  PROJECTS SECTION (Updated for Responsiveness)
+  PROJECTS SECTION (Optimized for Compact Layout)
   ========================================
-  - Mobile-first design approach
-  - Flexible grid layout that adapts to screen size
-  - Consistent spacing and typography scaling
+  - Reduced spacing between elements
+  - More compact card layout
+  - Smaller carousel buttons
+  - Adjusted image sizing
 */
 
-/* General Styles for Projects Section (Mobile First) */
+/* General Styles for Projects Section */
 .projects {
-  padding: 15vh 5vw;
-  /* Using viewport units for responsive padding */
-  background: linear-gradient(to bottom, #0a0d1a 0%, #111b2e 100%);
+  padding: 10vh 5vw;
+  background: linear-gradient(to bottom, #0645ba00 10%, #1f2c64 100%);
   text-align: center;
   box-sizing: border-box;
   width: 100%;
+  height: auto;
+  margin-top: -8%;
 }
 
 .projects h2 {
   color: #ffffff;
-  font-size: 2rem;
-  margin-bottom: 30px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
   background: linear-gradient(to bottom, #eff1f3 0%, #dbe0e6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Projects Grid - Mobile First */
+/* Projects Grid */
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
-  /* Single column on mobile */
-  height: 100%;
-  gap: 25px;
+  gap: 20px;
   width: 100%;
   margin: 0 auto;
   padding: 0 5%;
   box-sizing: border-box;
 }
 
-/* Project Card - Mobile First */
+/* Project Card */
 .card {
   background-color: rgb(209, 215, 214);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
   text-align: left;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  height: auto;
+  width: auto;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Project Title */
 .card h3 {
   color: #2c3e50;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+  margin-top: -7px;
+  margin-bottom: 0px;
 }
 
 /* Project Description */
 .card p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #535959;
-  margin-bottom: 15px;
-  line-height: 1.5;
+  margin-top: -1px;
+  line-height: 1.2;
 }
 
 /* Project Features Section */
 .project-features h4 {
   color: #2c3e50;
-  font-size: 1.1rem;
-  margin: 15px 0 8px 0;
+  font-size: 1rem;
+  margin: 12px 0 6px 0;
+  line-height: 0.9;
 }
 
 .project-features ul {
-  padding-left: 20px;
-  margin-bottom: 15px;
+  padding-left: 18px;
+  margin-bottom: 12px;
 }
 
 .project-features li {
   color: #535959;
-  font-size: 0.9rem;
-  margin-bottom: 5px;
-  line-height: 1.4;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  line-height: 1.2;
 }
 
 /* Tech Stack Section */
 .project-stack h4 {
   color: #2c3e50;
-  font-size: 1.1rem;
-  margin: 15px 0 8px 0;
+  font-size: 1rem;
+  margin: 12px 0 6px 0;
 }
 
 .stack-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 15px;
+  gap: 6px;
+  margin-bottom: 12px;
 }
 
 .stack-tag {
   background-color: #3498db;
   color: white;
-  padding: 4px 10px;
-  border-radius: 15px;
-  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
 }
 
 /* Project Links */
 .project-links {
   display: flex;
   flex-wrap: wrap;
-  /* Allow wrapping on small screens */
-  gap: 10px;
-  margin-top: 15px;
+  gap: 8px;
+  margin-top: 12px;
 }
 
 .project-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 4px;
   background-color: #3498db;
   color: white;
-  padding: 8px 12px;
+  padding: 6px 10px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 4px;
   transition: background 0.3s, transform 0.2s;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   flex: 1;
-  /* Make buttons take equal space */
-  min-width: 120px;
-  /* Minimum width for buttons */
+  min-width: 110px;
 }
 
 /* Project Image Styles */
@@ -143,116 +144,104 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .project-image {
   width: 100%;
-  height: 20%;
-  object-fit: cover;
-  border-radius: 8px 8px 0 0;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-height: 310px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-  overflow: hidden;
-  /* Ensures image corners stay rounded */
+/* Carousel Buttons */
+.carousel-btn {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  font-size: 12px;
+  margin: 0% 18%;
+  border-radius: 50%;
+  border: none;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.carousel-btn:hover {
+  background: #2980b9;
+  transform: scale(1.1);
 }
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
+  .projects {
+    padding: 12vh 6vw;
+  }
+
+  .projects h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 22px;
+    padding: 0;
+  }
+
+  .card {
+    padding: 18px;
+    height: auto;
+    width: auto;
+  }
+
+  .card h3 {
+    font-size: 1.4rem;
+  }
+
   .project-image {
-    height: 200px;
+    max-height: 310px;
   }
 }
 
 @media (min-width: 1024px) {
-  .project-image {
-    height: 220px;
-  }
-}
-
-.project-links a:hover {
-  background-color: #2980b9;
-  transform: scale(1.05);
-}
-
-/* TABLET RESPONSIVENESS (768px and up) */
-@media (min-width: 768px) {
   .projects {
-    padding: 15vh 8vw;
+    padding: 12vh 8vw;
   }
 
   .projects h2 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
   }
 
   .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    padding: 0;
-  }
-
-  .card h3 {
-    font-size: 1.5rem;
-  }
-
-  .card p {
-    font-size: 1.05rem;
-  }
-}
-
-/* DESKTOP RESPONSIVENESS (1024px and up) */
-@media (min-width: 1024px) {
-  .projects {
-    padding: 15vh 10vw;
-    width: 100%;
-  }
-
-  .project-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .projects h2 {
-    font-size: 3rem;
-  }
-
-  .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 30px;
-    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 25px;
   }
 
   .card {
-    padding: 25px;
-    height: 99%;
+    padding: 20px;
+    width: auto;
   }
 
-  .card h3 {
-    font-size: 1.6rem;
-  }
-
-  .card p {
-    font-size: 1.1rem;
+  .project-image {
+    max-height: 310px;
   }
 
   .project-links {
     flex-wrap: nowrap;
-    /* Keep buttons in one row on desktop */
-  }
-
-  .project-links a {
-    flex: none;
-    /* Reset flex for desktop */
-    width: auto;
   }
 }
 
-/* LARGE DESKTOP (1440px and up) */
 @media (min-width: 1440px) {
   .project-grid {
     max-width: 1400px;
+  }
+
+  .project-image {
+    max-height: 350px;
   }
 }
