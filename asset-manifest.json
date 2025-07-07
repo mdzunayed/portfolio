@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f49bb180.css",
-    "main.js": "/portfolio/static/js/main.7bf22046.js",
+    "main.css": "/portfolio/static/css/main.d22fbd88.css",
+    "main.js": "/portfolio/static/js/main.17de3106.js",
     "static/js/453.acca0757.chunk.js": "/portfolio/static/js/453.acca0757.chunk.js",
     "static/media/lung-cancer3.png": "/portfolio/static/media/lung-cancer3.7354dacdc8e8313818f4.png",
     "static/media/dermavision.png": "/portfolio/static/media/dermavision.f9b12fca42833d6295b4.png",
@@ -11,12 +11,12 @@
     "static/media/profile.jpg": "/portfolio/static/media/profile.e436148ae845aa182da4.jpg",
     "static/media/dermavision1.png": "/portfolio/static/media/dermavision1.6388173ba4972aff16ec.png",
     "index.html": "/portfolio/index.html",
-    "main.f49bb180.css.map": "/portfolio/static/css/main.f49bb180.css.map",
-    "main.7bf22046.js.map": "/portfolio/static/js/main.7bf22046.js.map",
+    "main.d22fbd88.css.map": "/portfolio/static/css/main.d22fbd88.css.map",
+    "main.17de3106.js.map": "/portfolio/static/js/main.17de3106.js.map",
     "453.acca0757.chunk.js.map": "/portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f49bb180.css",
-    "static/js/main.7bf22046.js"
+    "static/css/main.d22fbd88.css",
+    "static/js/main.17de3106.js"
   ]
 }
