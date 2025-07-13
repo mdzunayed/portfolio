@@ -1,202 +1,414 @@
-/* Blog Section */
-.blog-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Blog Section - Scoped to avoid conflicts */
+#blog.blog-section {
+  padding: 0rem 0;
   background: linear-gradient(to bottom, #0645ba00 10%, #1f2c64 100%);
-  color: #d3d3d3;
-  padding: 10vh 5%;
-  min-height: 100vh;
   width: 100%;
+  box-sizing: border-box;
 }
 
-/* Blog Container */
-.blog-section .container {
-  text-align: left;
-  padding: 4vh 5vh;
-  max-width: 900px;
+#blog .container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+#blog .blog-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+#blog .section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 2.25rem;
+  color: #e5ecf8;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#blog .section-icon {
+  color: #3b82f6;
+}
+
+#blog .controls {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#blog .search-bar {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+#blog .search-bar input {
+  width: 100%;
+  padding: 0.75rem 1.25rem 0.75rem 3rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#blog .search-bar input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+}
+
+#blog .search-icon {
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+#blog .filter-buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#blog .filter-buttons button {
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 50px;
+  background: rgb(4, 7, 196);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  color: white;
+}
+
+#blog .filter-buttons button:hover {
+  background: #3b82f6;
+}
+
+#blog .filter-buttons button.active {
+  background: #3b82f6;
+  color: rgb(255, 255, 255);
+  border-color: #3b82f6;
+}
+
+#blog .blog-grid {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+#blog .blog-category {
   background-color: #2c3e50;
   border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  color: #e0e0e0;
-  margin-top: -8%;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  flex: 1;
+  min-width: 0;
 }
 
-.blog-section .container h2 {
-  color: #e0e0e0;
-  font-size: 2.4rem;
-  margin-bottom: 15px;
-  font-weight: 700;
-  text-align: center;
-}
-
-/* Blog Grid */
-.blog-grid {
-  display: grid;
-  gap: 25px;
-  width: 100%;
-}
-
-/* Blog Post Card */
-.blog-post {
-  background: rgba(40, 50, 65, 0.9);
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  padding: 25px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-  min-height: 300px;
-}
-
-.blog-post:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-}
-
-.blog-post h3 {
-  color: #ffffff;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #3498db;
-  padding-bottom: 10px;
-  align-content: center;
-  text-align: center;
-}
-
-/* Problems List */
-.problems-list {
+#blog .category-title {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  color: #e4e4e4;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(241, 245, 249, 0.3);
+  text-align: center;
 }
 
-.problem {
-  background: linear-gradient(to bottom, #111e3536 10%, #111b473b 100%);
+
+
+#blog .category-icon {
+  color: #3b82f6;
+  font-size: 1.25rem;
+}
+
+#blog .problems-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+#blog .problem-card {
+  background: #283241e6;
   border-radius: 8px;
-  padding: 1.2rem;
-  font-size: 1rem;
-  color: #e0e0e0;
-  line-height: 1.6;
+  padding: 1.5rem;
+  border: 1px solid #464141;
   transition: all 0.3s ease;
-  border: 1px solid #3d3d3d;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
 }
 
-.problem:hover {
+#blog .problem-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  border-color: #4d4d4d;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #303a46;
 }
 
-.problem-header {
+#blog .problem-card.featured {
+  border-left: 4px solid #3b82f6;
+  background: #283241e6;
+}
+
+#blog .problem-header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+#blog .problem-title {
+  font-weight: 600;
+  color: #dfe0e5;
+  font-size: 1.1rem;
+  display: inline-flex;
   align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+#blog .problem-title:hover {
+  /* color: #3b82f6;
+  text-decoration: underline; */
+}
+
+#blog .link-icon {
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+#blog .problem-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+#blog .problem-date {
+  color: rgb(195, 173, 132);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#blog .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#blog .tag {
+  background: #d0d2d5;
+  color: #0832d8;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#blog .featured-badge {
+  background: #3b82f6;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+#blog .problem-description {
+  color: #cdd7ec;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Links Container */
+#blog .links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+#blog .link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background-color: rgb(0, 0, 0);
+  color: #3b82f6;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+#blog .link-button:hover {
+  background-color: rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
+}
+
+#blog .link-button svg {
+  font-size: 0.9em;
+}
+
+/* Metrics Section */
+#blog .metrics-section {
+  margin-top: .1rem;
+}
+
+#blog .metrics-title {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+#blog .metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(226, 232, 240, 0.7);
+}
+
+#blog .metric {
+  background: rgba(176, 202, 226, 0.884);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+#blog .metric-label {
+  font-size: 0.75rem;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#blog .metric-value {
+  font-weight: 600;
+  color: #173d7a;
+  margin-top: 0.2rem;
+}
+
+/* Details Section */
+#blog .details-section {
+  margin-top: 1.5rem;
+}
+
+#blog .details-title {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+#blog .details-list {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+#blog .details-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+#blog .no-results {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+#blog .no-results h3 {
+  color: #1e293b;
   margin-bottom: 0.5rem;
 }
 
-.problem-name {
-  font-weight: 600;
-  color: #ffffff;
-  font-size: 1.1rem;
+#blog .no-results p {
+  color: #64748b;
 }
 
-.problem-link {
-  color: #58a6ff;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.problem-link:hover {
-  text-decoration: underline;
-}
-
-.problem-description {
-  margin: 0;
-  color: #b0b0b0;
-}
-
-/* Status indicator (like the checkmark in your example) */
-.problem-status {
-  color: #58d68d;
-  margin-right: 5px;
-}
-
-/* Blog Links */
-.blog-post a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  color: #3498db;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease-in-out;
-  margin: 0 5px;
-}
-
-.blog-post a:hover {
-  color: #2980b9;
-  text-decoration: underline;
-}
-
-.link-icon {
-  font-size: 0.8em;
-}
-
-
-/* Responsive Design */
-@media (min-width: 768px) {
-  .blog-section {
-    padding: 10vh 5vw;
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  #blog .blog-grid {
+    gap: 2rem;
   }
 
-  .blog-section .container {
-    max-width: 800px;
-    padding: 5vh 6vh;
+  #blog .blog-category {
+    padding: 1.5rem;
   }
 
-  .blog-grid {
-    /* flex-direction: column; */
-    grid-template-columns: repeat(2, 1fr);
+  #blog .problem-card {
+    padding: 1.5rem;
   }
 
-  .blog-post h3 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .problem {
-    font-size: 1.1rem;
+  #blog .metrics-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   }
 }
 
-@media (min-width: 1024px) {
-  .blog-section {
-    margin-top: 2%;
+@media (max-width: 768px) {
+  #blog .blog-grid {
+    flex-direction: column;
+    gap: 2rem;
   }
 
-  .blog-section .container {
-    max-width: 1200px;
+  #blog .blog-category {
+    width: 100%;
+    padding: 1.5rem;
   }
 
-  .blog-section .container h2 {
-    font-size: 2.8rem;
+  #blog .metrics-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1rem;
   }
 
-  .blog-grid {
-    grid-template-columns: repeat(2, 1fr);
+  #blog .problem-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #blog.blog-section {
+    padding: 2rem 0;
   }
 
-  .blog-post h3 {
-    font-size: 2.2rem;
-    text-align: center;
+  #blog .container {
+    padding: 0 1rem;
   }
 
-  .problem {
-    font-size: 1.15rem;
+  #blog .blog-category {
+    padding: 1.25rem;
+  }
+
+  #blog .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #blog .problem-card {
+    padding: 1rem;
+  }
+
+  #blog .section-title {
+    font-size: 1.8rem;
+  }
+
+  #blog .category-title {
+    font-size: 1.3rem;
+  }
+
+  #blog .links-container {
+    flex-direction: column;
+    gap: 0.8rem;
   }
 }

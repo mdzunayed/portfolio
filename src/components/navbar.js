@@ -26,8 +26,8 @@ const Navbar = () => {
     <nav className="navbar">
       <h2 className="navbar-brand">Zunayed</h2>
 
-      <div 
-        className={`hamburger ${isOpen ? "open" : ""}`} 
+      <div
+        className={`hamburger ${isOpen ? "open" : ""}`}
         onClick={toggleMenu}
         aria-label="Menu"
         aria-expanded={isOpen}
@@ -39,12 +39,36 @@ const Navbar = () => {
 
       <div className={`nav-links ${isOpen ? "active" : ""}`}>
         <ul>
-          <li><Link to="/" onClick={isMobile ? toggleMenu : null}>Home</Link></li>
-          <li><Link to="/blog" onClick={isMobile ? toggleMenu : null}>Blog</Link></li>
-          <li><Link to="/projects" onClick={isMobile ? toggleMenu : null}>Projects</Link></li>
-          <li><Link to="/about" onClick={isMobile ? toggleMenu : null}>About</Link></li>
-          <li><Link to="/contact" onClick={isMobile ? toggleMenu : null}>Contact</Link></li>
-          <li><Link to="/resume" onClick={isMobile ? toggleMenu : null}>Resume</Link></li>
+          <li>
+            <Link to="/" onClick={isMobile ? toggleMenu : null}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/blog" onClick={isMobile ? toggleMenu : null}>
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects" onClick={isMobile ? toggleMenu : null}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={isMobile ? toggleMenu : null}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={isMobile ? toggleMenu : null}>
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link to="/resume" onClick={isMobile ? toggleMenu : null}>
+              Resume
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

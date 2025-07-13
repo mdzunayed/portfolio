@@ -65,10 +65,14 @@
   display: block;
 }
 
-.nav-links a:hover,
+.nav-links a:hover {
+  color: yellow;
+}
+
 .nav-links a:focus {
   color: var(--accent-color);
   transform: scale(1.05);
+  color: yellow;
 }
 
 /* Hamburger Menu */

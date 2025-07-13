@@ -24,7 +24,7 @@ const About = () => {
       <div className="about-content">
         <h2 className="section-title">About Me</h2>
         <p className="about-description">
-          I'm a passionate developer with expertise in Machine Learning, AI, and
+          I'm a passionate developer with expertise in Machine Learning and
           Competitive Programming. I love building innovative solutions to
           real-world problems and constantly challenge myself to grow as an
           engineer.
@@ -85,17 +85,17 @@ const About = () => {
                   AtCoder
                 </a>
               </li>
-              
+
               <li>
-              <FaClipboardCheck />
-              <a
-                href="https://cses.fi/user/195018"
-                target="_blank"
-                rel="noreferrer"
-              >
-                CSES
-              </a>
-            </li>
+                <FaClipboardCheck />
+                <a
+                  href="https://cses.fi/user/195018"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  CSES
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -114,43 +114,42 @@ const About = () => {
                 </a>
               </li>
               <li>
-              <FaBrain />
-              <a
-                href="https://www.deep-ml.com/profile/ccfKkpcty4cRNvQzg5xgneiWnPi1"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Deep-ML
-              </a>
-            </li>
-            <li>
-              <SiHuggingface />
-              <a
-                href="https://huggingface.co/zunayed02"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Hugging Face
-              </a>
-            </li>
-            <li>
-              <FaFileAlt />
-              <a
-                href="https://paperswithcode.com/profile/YOUR_USERNAME"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Papers with Code
-              </a>
-            </li>
-              </ul>
+                <FaBrain />
+                <a
+                  href="https://www.deep-ml.com/profile/ccfKkpcty4cRNvQzg5xgneiWnPi1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Deep-ML
+                </a>
+              </li>
+              <li>
+                <SiHuggingface />
+                <a
+                  href="https://huggingface.co/zunayed02"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Hugging Face
+                </a>
+              </li>
+              <li>
+                <FaFileAlt />
+                <a
+                  href="https://paperswithcode.com/profile/YOUR_USERNAME"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Papers with Code
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Social & Contact */}
           <div className="profile-column">
             <h3>Social</h3>
             <ul>
-              
               <li>
                 <FaLinkedin />
                 <a
@@ -162,15 +161,15 @@ const About = () => {
                 </a>
               </li>
               <li>
-                  <FaFacebook />
-                  <a
-                    href="https://www.facebook.com/zunayed002"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Facebook
-                  </a>
-                </li>
+                <FaFacebook />
+                <a
+                  href="https://www.facebook.com/zunayed002"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Facebook
+                </a>
+              </li>
 
               <li>
                 <FaTwitter />

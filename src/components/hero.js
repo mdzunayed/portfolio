@@ -33,9 +33,9 @@ const Hero = () => {
             Leetcode, Codeforces, Codechef, AtCoder, Vjudge, CSES etc.
           </p>
           <p>
-            My technical expertise includes C, C++, java, Python, NumPy, pandas,
-            PyTorch, TensorFlow, Grad-Cam. I have build few Machine Learning
-            projects.
+            My technical expertise includes C, C++, OOP, java, Python, NumPy,
+            pandas, PyTorch, TensorFlow, Grad-Cam. I have build few Machine
+            Learning projects.
           </p>
         </div>
       </div>
