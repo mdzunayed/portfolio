@@ -278,7 +278,7 @@ const Blog = () => {
       <div className="container">
         <div className="blog-header">
           <h2 className="section-title">
-            <FaBookOpen className="section-icon" /> Technical Writings
+            <FaBookOpen className="section-icon" /> Articles
           </h2>
           <div className="controls">
             <div className="search-bar">

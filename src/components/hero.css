@@ -21,6 +21,7 @@
   /* Adjusted padding for mobile */
   text-align: center;
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
   /* Ensures padding is included in the width */
 }

@@ -8,6 +8,7 @@
   background: linear-gradient(to bottom, #0645ba00 10%, #1f2c64 100%);
   text-align: center;
   width: 100%;
+  height: 100%;
   position: relative;
   z-index: 1;
   margin-bottom: 1px;

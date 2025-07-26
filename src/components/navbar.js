@@ -46,7 +46,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/blog" onClick={isMobile ? toggleMenu : null}>
-              Blog
+              Articles
             </Link>
           </li>
           <li>
